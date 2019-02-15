@@ -21,32 +21,5 @@ export default class SearchUser extends Component{
 			this.props.onSelect(user);
 		}
 	}
-	render(){
-
-		const {store} = this.props;
-
-		
-		const users = store.getSearchUsers();
-
-
-
-
-		return <div className="search-user">
-
-			<div className="user-list">
-
-			{users.map((user, index) => {
-
-				return (<div onClick={() => this.handleOnClick(user)} key={index} className="user">
-					<img src={_.get(user, 'avatar')} alt="..." />
-					<h2>{_.get(user, 'name')}</h2>
-				</div>)
-
-			})}
-				
-				
-
-			</div>
-		</div>
-	}
+	
 }
