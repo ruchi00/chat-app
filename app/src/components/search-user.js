@@ -49,4 +49,5 @@ export default class SearchUser extends Component{
 			</div>
 		</div>
 	}
+	
 }
